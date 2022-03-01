@@ -400,4 +400,4 @@ could look like is the Topic of my [Hexagonal Architecture Study](https://github
 article which is still in process.
 
 Tell me what you think about merging Bundle, Extension and Configuration together
-by attend the discussion about this post on [Twitter](#todo).
+by attend the discussion about this post on [Twitter](https://twitter.com/alex_s_/status/1498777130045431811).
