@@ -158,7 +158,8 @@ class MyLibraryBundle extends Bundle implements ExtensionInterface, Configuratio
 In the next step we are providing the `Extension` by default symfony uses some magic
 to detect where the extension class exists and create it. The logic can be found
 [here in the Bundle::getContainerExtension method](https://github.com/symfony/symfony/blob/a9c2c8a2246cfdd7c445b4b1c4480134c8e3c782/src/Symfony/Component/HttpKernel/Bundle/Bundle.php#L63).
-We are implementing this method the following way to return our instance of it:
+We are implementing this method the following way to return `$this` instead
+of creating an extra extension instance there:
 
 ```php
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
@@ -221,7 +222,8 @@ as it did work without any problems for me.
 
 The last required instance is the Configuration which we need provide by the [`ExtensionInterface`](https://github.com/symfony/symfony/blob/v6.0.5/src/Symfony/Component/DependencyInjection/Extension/ExtensionInterface.php)
 by Default this was also auto discovered by some magic in the [`Extension`](https://github.com/symfony/symfony/blob/v6.0.5/src/Symfony/Component/DependencyInjection/Extension/Extension.php).
-We are implementing this method the following way to return our instance of it:
+We are implementing this method the following way by returning again `$this`
+instead of providing an extra instance of configuration class:
 
 ```php
 use Symfony\Component\Config\Definition\ConfigurationInterface;
