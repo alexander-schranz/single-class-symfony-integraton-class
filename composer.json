@@ -1,0 +1,23 @@
+{
+    "name": "alexanderschranz/combining-bundle-extension-configuration",
+    "description": "Combining Symfony Bundle Extension Configuration Class",
+    "type": "library",
+    "require": {
+        "php": "^8.0"
+        "symfony/config": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/http-kernel": "^6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\Library\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Schranz",
+            "email": "alexander@sulu.io"
+        }
+    ]
+}
