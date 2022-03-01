@@ -52,8 +52,9 @@ Actually the integration of a library into Symfony Ecosystem. Is done by
 
 The Bundle class is the main class integrating a library via its own
 Bundle class into the Symfony Kernel. The interface is so provided
-by `symfony/http-kernel` package. Its responsibility is to provide
-Extension class.
+by `symfony/http-kernel` package. Its main responsibility is to provide
+Extension class, but also can configure something on [`boot`](https://github.com/symfony/ux-turbo/blob/5ca7dda0fa8f444ff18a4a88dec5dcc2afd0ee78/TurboBundle.php#L32)
+of the Symfony Kernel or add [`CompilerPasses`](https://symfony.com/doc/current/service_container/compiler_passes.html) in its [`build`]((https://github.com/symfony/ux-turbo/blob/5ca7dda0fa8f444ff18a4a88dec5dcc2afd0ee78/TurboBundle.php#L35) ) method.
 
 ```php
 use Symfony\Component\HttpKernel\Bundle\Bundle;
