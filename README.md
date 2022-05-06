@@ -404,3 +404,10 @@ article which is still in process.
 
 Tell me what you think about merging Bundle, Extension and Configuration together
 by attend the discussion about this post on [Twitter](https://twitter.com/alex_s_/status/1498777130045431811).
+
+## Update with Symfony 6.1 (AbstractBundle)
+
+After discussion in the following issue [https://github.com/symfony/symfony/issues/45607](https://github.com/symfony/symfony/issues/45607), I was a little bit sad that it was something Symfony don't want to support. But with the upcoming Symfony 6.1
+release, they seems to rethink about the DI/Bundle issue and are now providing the new [AbstractBundle](https://symfony.com/blog/new-in-symfony-6-1-simpler-bundle-extension-and-configuration).
+
+Read more about it on the Symfony Blog: [https://symfony.com/blog/new-in-symfony-6-1-simpler-bundle-extension-and-configuration](https://symfony.com/blog/new-in-symfony-6-1-simpler-bundle-extension-and-configuration).
